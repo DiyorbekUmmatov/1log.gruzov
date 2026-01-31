@@ -1,0 +1,73 @@
+.navbarSection {
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(151, 150, 150, 0.682);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.navbarCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  min-height: 80px;
+  padding: 0 2%;
+  padding-bottom: 3px;
+  gap: 1%;
+}
+
+.navMenuBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  user-select: none;
+  gap: 5px;
+  transition: color 0.1s ease-in;
+  position: relative;
+}
+
+.navSavedCount {
+  position: absolute;
+  top: -8px;
+  right: 18px;
+  background-color: rgb(232, 77, 0);
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(255, 0, 0, 0.529);
+}
+
+.navMenuBtn:active {
+  color: rgb(46, 46, 46);
+}
+
+.navMenuBtn i {
+  font-size: 22px;
+}
+
+:global(.navbarActiveBtn) {
+  color: white;
+}
+
+@media only screen and (max-width: 400px) {
+  .navbarSection .navbarCont {
+    padding-bottom: 1px;
+  }
+
+  .navMenuBtn {
+    font-size: 12px;
+  }
+
+  .navMenuBtn i {
+    font-size: 20px;
+  }
+}

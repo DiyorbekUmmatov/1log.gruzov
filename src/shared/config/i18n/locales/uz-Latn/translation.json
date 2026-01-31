@@ -1,0 +1,118 @@
+{
+  "tab": {
+    "cargo": "Yuk",
+    "transport": "Transport"
+  },
+  "form": {
+    "recently": "Yaqinda qidirilgan",
+    "from": "Qayerdan",
+    "to": "Qayerga",
+    "search": "Qidirish",
+    "searching": "Qidirilmoqda...",
+    "dateFrom": "Sana dan",
+    "dateTo": "Sana gacha",
+    "weightFrom": "Og‘irlik",
+    "weightTo": "Og‘irlik gacha",
+    "volumeFrom": "Hajm",
+    "volumeTo": "Hajm gacha",
+    "type": "Yuk turi",
+    "find": "Topish",
+    "settingsTitle": "Qidiruv sozlamalari",
+    "filtersTitle": "Qidiruv filtrlari",
+    "filtersSubtitle": "Arizalarni qidirish uchun filterni tanlang",
+    "filterOption1": "Faqat to‘g‘ridan-to‘g‘ri buyurtmalardan",
+    "filterOption2": "Faqat tasdiqlanganlardan",
+    "filterOption3": "Yuk tashish narxi",
+    "filterOption3_1": "Narx bilan",
+    "filterOption3_2": "Naqd pulsiz",
+    "filterOption3_3": "Naqd"
+  },
+  "info_title_top": {
+    "line1": "ZAMONAVIY LOGISTIKA UCHUN",
+    "line2": "RAQAMLI PLATFORMA"
+  },
+  "info_description": "Yuk yoki transportni bir necha bosishda toping va tashishni real vaqtda nazorat qiling!",
+  "bottom_title": {
+    "line1": "1LOG - YAGONА EKOTIZIM",
+    "line2": "YUK VA TRANSPORT QIDIRISH UCHUN"
+  },
+  "popular_directions": "Eng mashhur yo‘nalishlar",
+  "statistics": {
+    "users": "Foydalanuvchilar",
+    "cargos": "Yuklar",
+    "active_users": "Faol foydalanuvchilar",
+    "logists": "Logistlar",
+    "drivers": "Haydovchilar",
+    "premium_cargos": "Premium yuklar"
+  },
+  "nav": {
+    "search": "Izlash",
+    "bookmarks": "Saralangan",
+    "add": "Qo‘shish",
+    "notifications": "Bildirishnoma",
+    "applications": "Arizalarim"
+  },
+  "cargo_type": "Transport turlari",
+  "all_cargo_type": "Barcha transport turlari",
+  "detail": "Batafsil",
+  "showContacts": "Kontaktlar",
+  "loading": "Yuklanmoqda...",
+  "noCargo": "Ko‘rsatish uchun yuklar yo‘q",
+  "search_head": {
+    "update": "Yangilash",
+    "isPremium": "faqat Premium",
+    "filters": "Filtr",
+    "settings": "Sozlamalar"
+  },
+  "found_cargos": "Sizning so‘rovingiz bo‘yicha <strong>{{count}}</strong> ta yuk topildi:",
+  "total_ads": "Jami {{total}} eʼlon",
+  "fraxt": "Fraxt",
+  "sort": {
+    "title": "Saralash bo‘yicha:",
+    "createdAt": "yaratilgan vaqti",
+    "loadDate": "yuklash sanasi",
+    "price": "narxi",
+    "rating": "reytingi"
+  },
+  "page_block": {
+    "top_text": "Ishlab chiqilmoqda",
+    "title": "Sahifa tez orada paydo bo‘ladi",
+    "link": "Qidiruvga o'tish"
+  },
+  "contactModal": {
+    "title": "Kontaktlar",
+    "write_in": " ga yozish",
+    "source": "Manba:",
+    "share": "Do‘stlar bilan ulashish",
+    "group": " Telegram guruh"
+  },
+  "empty": {
+    "title": "Saqlanganlar hozircha yo‘q",
+    "subtitle": "Barcha saqlangan yuklar shu sahifada ko‘rinadi.",
+    "noCargo": "Yuklar topilmadi",
+    "cargoSubtitle": "Barcha yuklar shu yerda ko‘rinadi.",
+    "noNotification": "Yangi so‘rovlardan xabardor bo‘ling",
+    "notificationSubtitle": "Mos keladigan so‘rov paydo bo‘lganda sizga xabar beramiz",
+    "goSearch": "Qidiruvga o‘tish"
+  },
+  "fromAnywhere": "Qayerdan bo‘lsa ham",
+  "anywhere": "Qayerga bo‘lsa ham",
+  "notification": {
+    "title": "🔔Qaysi bildirishnomalarni yoqishni tanlang:",
+    "subtitle1": "Faqat kerakli bildirishnomalarni oling",
+    "subtitle2": "Siz bitta yoki bir nechta variantni yoqishingiz mumkin:",
+    "option1_bold": "Yo‘nalish bo‘yicha",
+    "option1_normal": "kerakli marshrut bo‘yicha yangi so‘rovlar paydo bo‘lganda",
+    "option2_bold": "Yuk bo‘yicha",
+    "option2_normal": "sizga mos yangi yuklar haqida bildirishnoma",
+    "option3_bold": "Ega bo‘yicha",
+    "option3_normal": "mijozingiz yangi so‘rovlar joylaganda"
+  },
+  "done": "Tayyor",
+  "subscribe": {
+    "title": "Sizda obuna yo‘q",
+    "subtitle": "Xizmatdan foydalanish uchun bot orqali obunani to‘lang.",
+    "button": "Bot orqali to‘lash"
+  },
+  "shareMessage": "Endi men 1LOG orqali yuklarni qidiryapman — oddiy, qulay va hammasi qo‘l ostida.\n\nO‘zing ko‘r: https://t.me/one_log_bot\n\nBepul davr avtomatik tarzda boshlanadi, faqat arizadagi «Kontaktlarni ko‘rsatish» tugmasini bosing."
+}

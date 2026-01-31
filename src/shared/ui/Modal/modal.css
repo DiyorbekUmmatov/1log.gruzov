@@ -1,0 +1,77 @@
+.modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 50;
+}
+
+.modal.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal_content {
+  width: 95%;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 6px;
+  padding: 20px;
+  transform: scale(0.6);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  opacity: 0;
+}
+
+.button_long {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0033cc;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.button_short {
+  background-color: #0028a5;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.modal.open .modal_content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+input[type="radio"] {
+  accent-color: #0028a5;
+}
+
+@media screen and (min-width: 640px) {
+  .modal_content {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 748px) {
+  .modal_content {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .modal_content {
+    width: 600px;
+  }
+}

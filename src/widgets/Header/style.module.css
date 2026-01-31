@@ -1,0 +1,101 @@
+.headerSection {
+  min-height: 60px;
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.headerCont {
+  width: 95%;
+  background-color: #041e90;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: 70px;
+  border-radius: 28px;
+  color: white;
+  padding: 0 18px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.headerMenu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+.headerSelect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.headerSelect i {
+  transition: all 0.2s ease-in-out;
+}
+
+:global(.activeArrow) {
+  transform: rotate(180deg);
+}
+
+.setMoney,
+.setLang {
+  position: relative;
+}
+
+.setMoneyCont,
+.setLangCont {
+  position: absolute;
+  bottom: -5px;
+  transform: translateY(100%);
+  left: 0;
+  min-width: 100%;
+  white-space: nowrap;
+  background: white;
+  border: 1px solid #b0b0b0;
+  box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  padding: 3px;
+  z-index: 100;
+  border-radius: 3px;
+  color: black;
+  max-height: 165px;
+  overflow-x: auto;
+}
+
+.setMoneyCont div {
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.1s ease-in-out;
+}
+
+.setLangCont div {
+  padding: 5px 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f4f4f4;
+  transition: color 0.1s ease-in-out;
+}
+
+.setMoneyCont div:hover,
+.setLangCont div:hover {
+  background-color: #e9e9e9;
+}

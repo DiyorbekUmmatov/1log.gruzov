@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f7f9fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --accent-cta: #0b63d6;
+  --radius: 12px;
+  --max-width: 980px;
+  --gap: 24px;
+  --shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+}
+
+.caret-color-adjust {
+  caret-color: black !important;
+  -webkit-text-fill-color: #6b7280 !important;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .caret-color-adjust {
+    caret-color: black !important;
+    -webkit-text-fill-color: #6b7280 !important;
+  }
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-image: url(../../assets/images/site-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+  max-height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+main {
+  width: 95%;
+  min-height: calc(100vh - 160px);
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
+.active {
+  color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 28px;
+  width: fit-content;
+  height: 100%;
+  margin: auto;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.ph-eyebrow {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  color: var(--muted);
+}
+.ph-title {
+  margin: 8px 0 6px;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 600;
+  margin: 10px 0 20px 0;
+}
+.ph-actions {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(37, 99, 235, 0.12);
+}
+
+@media screen and (min-width: 640px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-container {
+    width: 790px;
+  }
+}

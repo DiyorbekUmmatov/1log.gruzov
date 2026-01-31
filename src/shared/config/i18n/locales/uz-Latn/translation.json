@@ -114,5 +114,18 @@
     "subtitle": "Xizmatdan foydalanish uchun bot orqali obunani to‘lang.",
     "button": "Bot orqali to‘lash"
   },
+  "pwa": {
+    "title": "Ilovani o‘rnatish",
+    "install": "O‘rnatish",
+    "installing": "O‘rnatilmoqda...",
+    "installed": "Ilova allaqachon o‘rnatilgan.",
+    "notAvailable": "Bu brauzerda o‘rnatish mavjud emas.",
+    "iosTitle": "iPhone / iPad’da o‘rnatish",
+    "iosStep1": "Saytni Safari’da oching.",
+    "iosStep2": "Share (Ulashish) tugmasini bosing.",
+    "iosStep3": "«Add to Home Screen»ni tanlang.",
+    "iosStep4": "«Add» tugmasini bosing.",
+    "iosNote": "iOS’da to‘g‘ridan-to‘g‘ri o‘rnatish yo‘q — Safari orqali homescreen’ga qo‘shiladi."
+  },
   "shareMessage": "Endi men 1LOG orqali yuklarni qidiryapman — oddiy, qulay va hammasi qo‘l ostida.\n\nO‘zing ko‘r: https://t.me/one_log_bot\n\nBepul davr avtomatik tarzda boshlanadi, faqat arizadagi «Kontaktlarni ko‘rsatish» tugmasini bosing."
 }

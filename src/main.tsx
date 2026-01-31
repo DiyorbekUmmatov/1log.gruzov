@@ -5,6 +5,11 @@ import { router } from "./app/routing/router";
 import "./app/styles/globals.css";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
+import { registerSW } from "virtual:pwa-register";
+
+if (import.meta.env.PROD) {
+  registerSW({ immediate: true });
+}
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

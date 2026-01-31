@@ -5,10 +5,12 @@ import { FaGlobe } from "react-icons/fa";
 import { RiMenu2Fill } from "react-icons/ri";
 import { MdSupportAgent } from "react-icons/md";
 import { LangDropdown } from "./ui/LangDropdown";
+import { MenuModal } from "./ui/MenuModal";
 import styles from "./style.module.css";
 
 export const Header = () => {
   const [openLangDropdown, setOpenLangDropdown] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
   const closeDropdown = () => setOpenLangDropdown(false);
   const { i18n } = useAppTranslation();
 
@@ -49,9 +51,18 @@ export const Header = () => {
             </div>
           </div>
 
-          <RiMenu2Fill className="text-2xl" />
+          <button
+            type="button"
+            onClick={() => setOpenMenu(true)}
+            className="text-2xl"
+            aria-label="Menu"
+          >
+            <RiMenu2Fill />
+          </button>
         </div>
       </div>
+
+      <MenuModal isOpen={openMenu} onClose={() => setOpenMenu(false)} />
     </header>
   );
 };

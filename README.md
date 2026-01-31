@@ -67,4 +67,5 @@ export default tseslint.config([
   },
 ]);
 ```
+
 # 1log.gruzov

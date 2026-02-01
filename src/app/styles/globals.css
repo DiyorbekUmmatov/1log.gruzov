@@ -75,6 +75,21 @@ main {
   filter: saturate(1.25) contrast(1.05);
 }
 
+.glass-panel {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.76) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 10px 28px rgba(15, 23, 42, 0.12),
+    0 0 0 1px rgba(2, 6, 23, 0.06);
+}
+
 .active {
   color: #ffffff;
 }

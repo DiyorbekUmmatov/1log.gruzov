@@ -45,18 +45,12 @@ export const GlobeBackground3D = memo(function GlobeBackground3D({
     if (!el) return;
 
     const recalc = () => {
-      const w = Math.max(0, el.clientWidth - 10);
-      const next = Math.max(360, Math.min(1100, w));
+      const w = Math.max(0, window.innerWidth - 10);
+      const next = Math.max(360, Math.min(1600, w));
       setSize(next);
     };
 
     recalc();
-
-    if (typeof ResizeObserver !== "undefined") {
-      const ro = new ResizeObserver(recalc);
-      ro.observe(el);
-      return () => ro.disconnect();
-    }
 
     window.addEventListener("resize", recalc, { passive: true });
     return () => window.removeEventListener("resize", recalc);

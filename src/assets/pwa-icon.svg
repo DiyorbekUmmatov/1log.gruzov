@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" rx="180" fill="#041E90" />
+  <!-- Stylized italic "1L" built from simple geometry to avoid font dependency -->
+  <g fill="#FFFFFF">
+    <!-- "1" -->
+    <path d="M260 305 430 210 500 270 364 350 520 350 520 820 410 820 410 470 240 470Z" />
+    <!-- "L" -->
+    <path d="M610 250 740 250 740 700 910 700 880 820 610 820Z" />
+  </g>
+</svg>

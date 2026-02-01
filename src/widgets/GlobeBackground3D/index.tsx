@@ -45,9 +45,8 @@ export const GlobeBackground3D = memo(function GlobeBackground3D({
     if (!el) return;
 
     const recalc = () => {
-      const w = Math.max(0, window.innerWidth - 10);
-      const next = Math.max(360, Math.min(1600, w));
-      setSize(next);
+      const w = Math.max(0, window.innerWidth);
+      setSize(Math.min(2400, w));
     };
 
     recalc();

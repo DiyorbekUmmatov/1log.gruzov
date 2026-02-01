@@ -21,11 +21,17 @@ const outputs = [
 function wrapWithMaskablePadding(svg, size, padRatio = 0.1) {
   const pad = Math.round(size * padRatio);
   const inner = size - pad * 2;
+  const openEnd = svg.indexOf(">");
+  const closeStart = svg.lastIndexOf("</svg>");
+  const body =
+    openEnd !== -1 && closeStart !== -1 && closeStart > openEnd
+      ? svg.slice(openEnd + 1, closeStart)
+      : svg;
   return `
 <svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 1024 1024">
   <rect width="1024" height="1024" fill="#041E90"/>
   <g transform="translate(${(1024 - (1024 * inner) / size) / 2} ${(1024 - (1024 * inner) / size) / 2}) scale(${inner / size})">
-    ${svg.replace(/^[\\s\\S]*?<svg[^>]*>/, "").replace(/<\\/svg>[\\s\\S]*$/, "")}
+    ${body}
   </g>
 </svg>`;
 }

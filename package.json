@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
+    "icons:pwa": "node scripts/generate-pwa-icons.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

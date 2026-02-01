@@ -52,6 +52,13 @@
     "notifications": "Билдиришнома",
     "applications": "Аризаларим"
   },
+  "menu": {
+    "title": "Меню",
+    "openMiniApp": "Mini app’ни очиш",
+    "instructions": "Инструкция",
+    "openInBrowser": "Браузерда очиш",
+    "videoHint": "Telegram mini app MOV формати ни қўлламаслиги мумкин. Видеони MP4 (H.264) га ўтказиб frontend/public/instruksya.mp4 қилиб қўйинг — шунда бу ерда автоматик очилади. Ҳозирча браузерда очиб кўринг (Chrome/Safari)."
+  },
   "cargo_type": "Транспорт турлари",
   "all_cargo_type": "Барча транспорт турлари",
   "detail": "Батафсил",
@@ -116,16 +123,24 @@
   },
   "pwa": {
     "title": "Иловани ўрнатиш",
+    "pageTitle": "«ПоискГрузов» иловасини ўрнатиш",
     "install": "Ўрнатиш",
     "installing": "Ўрнатилмоқда...",
     "installed": "Илова аллақачон ўрнатилган.",
     "notAvailable": "Бу браузерда ўрнатиш мавжуд эмас.",
+    "telegramHint": "Telegram Mini App ичида ўрнатиш кўпинча ишламайди. Биз ўрнатиш саҳифасини ташқи браузерда очамиз (Android: Chrome), ўша ердан ўрнатасиз.",
+    "androidHint": "Агар ўрнатиш ойнаси чиқмаса, браузер менюсидан «Install app» ёки «Add to Home Screen»ни танланг.",
+    "androidTitle": "Android’da ўрнатиш",
+    "androidStep1": "Сайтни Chrome’da очинг.",
+    "androidStep2": "Меню (⋮) тугмасини босинг.",
+    "androidStep3": "«Install app» ёки «Add to Home Screen»ни танланг.",
+    "fromTelegram": "Сиз ўрнатиш саҳифасини Telegram’dan очдингиз. Агар ўрнатиш чиқмаса, саҳифани Chrome (Android) ёки Safari (iOS)да очинг.",
     "iosTitle": "iPhone / iPad’da ўрнатиш",
     "iosStep1": "Сайтни Safari’da очинг.",
     "iosStep2": "Share (Улашиш) тугмасини босинг.",
     "iosStep3": "«Add to Home Screen»ни танланг.",
     "iosStep4": "«Add» тугмасини босинг.",
-    "iosNote": "iOS’da тўғридан-тўғри ўрнатиш йўқ — Safari орқали homescreen’га қўшилади."
+    "iosNote": "iOS’da тўғридан-тўғри ўрнатиш йўқ — «Add to Home Screen» орқали homescreen’га қўшилади."
   },
   "shareMessage": "Энди мен 1LOG орқали юкларни қидиряпман — оддий, қулай ва ҳаммаси қўл остида.\n\nЎзинг кўр: https://t.me/one_log_bot\n\nБепул давр автоматик тарзда бошланади, фақат аризадаг «Контактларни кўрсатиш» тугмасини босинг."
 }

@@ -20,6 +20,9 @@ const Applications = lazy(() =>
 const Welcome = lazy(() =>
   import("@/pages/Welcome").then((m) => ({ default: m.Welcome }))
 );
+const Install = lazy(() =>
+  import("@/pages/Install").then((m) => ({ default: m.Install }))
+);
 
 const withSuspense = (node: React.ReactNode) => (
   <Suspense fallback={<PageLoader />}>{node}</Suspense>
@@ -59,5 +62,9 @@ export const router = createBrowserRouter([
   {
     path: "/:id/:lang/",
     element: withSuspense(<Welcome />),
+  },
+  {
+    path: "/install",
+    element: withSuspense(<Install />),
   },
 ]);

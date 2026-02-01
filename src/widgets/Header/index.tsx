@@ -6,11 +6,13 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { MdSupportAgent } from "react-icons/md";
 import { LangDropdown } from "./ui/LangDropdown";
 import { MenuModal } from "./ui/MenuModal";
+import { InstructionModal } from "./ui/InstructionModal";
 import styles from "./style.module.css";
 
 export const Header = () => {
   const [openLangDropdown, setOpenLangDropdown] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
+  const [openInstructions, setOpenInstructions] = useState(false);
   const closeDropdown = () => setOpenLangDropdown(false);
   const { i18n } = useAppTranslation();
 
@@ -62,7 +64,15 @@ export const Header = () => {
         </div>
       </div>
 
-      <MenuModal isOpen={openMenu} onClose={() => setOpenMenu(false)} />
+      <MenuModal
+        isOpen={openMenu}
+        onClose={() => setOpenMenu(false)}
+        onOpenInstructions={() => setOpenInstructions(true)}
+      />
+      <InstructionModal
+        isOpen={openInstructions}
+        onClose={() => setOpenInstructions(false)}
+      />
     </header>
   );
 };

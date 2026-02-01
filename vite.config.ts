@@ -13,6 +13,9 @@ export default defineConfig({
       registerType: "autoUpdate",
       injectRegister: null,
       manifestFilename: "manifest.webmanifest",
+      workbox: {
+        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
+      },
       includeAssets: [
         "favicon.ico",
         "apple-touch-icon.png",
@@ -22,9 +25,9 @@ export default defineConfig({
         "pwa-512-maskable.png",
       ],
       manifest: {
-        name: "1LOG",
-        short_name: "1LOG",
-        description: "1LOG logistics platform",
+        name: "ПоискГрузов",
+        short_name: "ПоискГрузов",
+        description: "ПоискГрузов",
         theme_color: "#041e90",
         background_color: "#ffffff",
         display: "standalone",

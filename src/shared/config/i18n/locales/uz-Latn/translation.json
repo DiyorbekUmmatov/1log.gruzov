@@ -52,6 +52,13 @@
     "notifications": "Bildirishnoma",
     "applications": "Arizalarim"
   },
+  "menu": {
+    "title": "Menyu",
+    "openMiniApp": "Mini app’ni ochish",
+    "instructions": "Instruksiya",
+    "openInBrowser": "Brauzerda ochish",
+    "videoHint": "Telegram mini app MOV formatini qo'llamasligi mumkin. Videoni MP4 (H.264) ga o'tkazib frontend/public/instruksya.mp4 qilib qo'ying — shunda bu yerda avtomatik ochiladi. Hozircha brauzerda ochib ko'ring (Chrome/Safari)."
+  },
   "cargo_type": "Transport turlari",
   "all_cargo_type": "Barcha transport turlari",
   "detail": "Batafsil",
@@ -116,16 +123,24 @@
   },
   "pwa": {
     "title": "Ilovani o‘rnatish",
+    "pageTitle": "«ПоискГрузов» ilovasini o‘rnatish",
     "install": "O‘rnatish",
     "installing": "O‘rnatilmoqda...",
     "installed": "Ilova allaqachon o‘rnatilgan.",
     "notAvailable": "Bu brauzerda o‘rnatish mavjud emas.",
+    "telegramHint": "Telegram Mini App ichida o‘rnatish ko‘pincha ishlamaydi. Biz o‘rnatish sahifasini tashqi brauzerda ochamiz (Android: Chrome), o‘sha yerdan o‘rnatasiz.",
+    "androidHint": "Agar o‘rnatish oynasi chiqmasa, brauzer menyusidan «Install app» yoki «Add to Home Screen»ni tanlang.",
+    "androidTitle": "Android’da o‘rnatish",
+    "androidStep1": "Saytni Chrome’da oching.",
+    "androidStep2": "Menyu (⋮) tugmasini bosing.",
+    "androidStep3": "«Install app» yoki «Add to Home Screen»ni tanlang.",
+    "fromTelegram": "Siz o‘rnatish sahifasini Telegram’dan ochdingiz. Agar o‘rnatish chiqmasa, sahifani Chrome (Android) yoki Safari (iOS)da oching.",
     "iosTitle": "iPhone / iPad’da o‘rnatish",
     "iosStep1": "Saytni Safari’da oching.",
     "iosStep2": "Share (Ulashish) tugmasini bosing.",
     "iosStep3": "«Add to Home Screen»ni tanlang.",
     "iosStep4": "«Add» tugmasini bosing.",
-    "iosNote": "iOS’da to‘g‘ridan-to‘g‘ri o‘rnatish yo‘q — Safari orqali homescreen’ga qo‘shiladi."
+    "iosNote": "iOS’da to‘g‘ridan-to‘g‘ri o‘rnatish yo‘q — «Add to Home Screen» orqali homescreen’ga qo‘shiladi."
   },
   "shareMessage": "Endi men 1LOG orqali yuklarni qidiryapman — oddiy, qulay va hammasi qo‘l ostida.\n\nO‘zing ko‘r: https://t.me/one_log_bot\n\nBepul davr avtomatik tarzda boshlanadi, faqat arizadagi «Kontaktlarni ko‘rsatish» tugmasini bosing."
 }

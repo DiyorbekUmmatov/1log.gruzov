@@ -8,6 +8,8 @@ import { useScrollTop } from "@/shared/lib/useScroll";
 import { setUserId } from "@/features/user/model/userSlice";
 import { STORAGE_KEYS } from "@/shared/config/storageKeys";
 import { useAppDispatch } from "@/app/hooks";
+import { useSwipeNavigation } from "@/shared/lib/useSwipeNavigation";
+import { GlobeBackground3D } from "@/widgets/GlobeBackground3D";
 
 function App() {
   const [isTgReady, setIsTgReady] = useState(false);
@@ -48,18 +50,25 @@ function App() {
   }, [dispatch]);
 
   const mainRef = useScrollTop<HTMLDivElement>();
+  const swipe = useSwipeNavigation();
 
   return (
     <I18nProvider>
       <div
         className={`main-container ${isTgReady ? "pt-[100px]" : ""} !pb-[78px]`}
         ref={mainRef}
+        onTouchStart={swipe.onTouchStart}
+        onTouchMove={swipe.onTouchMove}
+        onTouchEndCapture={swipe.onTouchEndCapture}
       >
-        <Header />
-        <main>
-          <Outlet />
-        </main>
-        <Navbar />
+        <div className="relative z-10">
+          <Header />
+          <main>
+            <GlobeBackground3D containerRef={mainRef} />
+            <Outlet />
+          </main>
+          <Navbar />
+        </div>
       </div>
     </I18nProvider>
   );

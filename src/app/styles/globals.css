@@ -42,13 +42,15 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
-  background-image: url(../../assets/images/site-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  isolation: isolate;
+  background:
+    radial-gradient(1200px 800px at 20% 10%, rgba(37, 99, 235, 0.14), transparent 60%),
+    radial-gradient(1000px 700px at 80% 30%, rgba(0, 40, 165, 0.12), transparent 55%),
+    #f7f9fb;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
   max-height: 100vh;
   overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -58,6 +60,26 @@ main {
   min-height: calc(100vh - 160px);
   padding: 15px 0;
   margin: 0 auto;
+  position: relative;
+  isolation: isolate;
+}
+
+.globe3d-layer {
+  position: absolute;
+  inset: 0;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+  filter: saturate(1.25) contrast(1.05);
+}
+
+main > *:not(.globe3d-layer) {
+  position: relative;
+  z-index: 1;
 }
 
 .active {
@@ -133,5 +155,11 @@ button {
 @media screen and (min-width: 1024px) {
   .main-container {
     width: 790px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .globe3d-layer {
+    display: none;
   }
 }

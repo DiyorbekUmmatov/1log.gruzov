@@ -130,17 +130,29 @@ export function MenuModal({ isOpen, onClose, onOpenInstructions }: MenuModalProp
             >
               {isInstalling ? t("pwa.installing") : t("pwa.install")}
             </button>
+          ) : isIOS ? (
+            <div className="space-y-3">
+              <button onClick={openInBrowser} className="button_long">
+                {t("pwa.install")}
+              </button>
+              <div className="text-sm text-gray-800">
+                <p className="font-semibold">{t("pwa.iosTitle")}</p>
+                <ol className="list-decimal pl-5 space-y-1 mt-2">
+                  <li>{t("pwa.iosStep1")}</li>
+                  <li>{t("pwa.iosStep2")}</li>
+                  <li>{t("pwa.iosStep3")}</li>
+                  <li>{t("pwa.iosStep4")}</li>
+                </ol>
+                <p className="text-xs text-gray-500 mt-2">{t("pwa.iosNote")}</p>
+              </div>
+            </div>
           ) : (
             <div className="space-y-3">
               <button onClick={openInBrowser} className="button_long">
                 {t("pwa.install")}
               </button>
               <p className="text-center text-sm text-gray-700">
-                {isMiniApp
-                  ? t("pwa.telegramHint")
-                  : isIOS
-                    ? t("pwa.iosNote")
-                    : t("pwa.androidHint")}
+                {isMiniApp ? t("pwa.telegramHint") : t("pwa.androidHint")}
               </p>
             </div>
           )}

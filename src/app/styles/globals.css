@@ -65,21 +65,14 @@ main {
 }
 
 .globe3d-layer {
-  position: absolute;
-  inset: 0;
-  padding: 0 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
   pointer-events: none;
   z-index: 0;
-  opacity: 0.6;
+  opacity: 0.62;
   filter: saturate(1.25) contrast(1.05);
-}
-
-main > *:not(.globe3d-layer) {
-  position: relative;
-  z-index: 1;
 }
 
 .active {

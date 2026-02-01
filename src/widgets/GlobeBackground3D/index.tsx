@@ -33,8 +33,7 @@ export const GlobeBackground3D = memo(function GlobeBackground3D({
   containerRef: React.RefObject<HTMLElement | null>;
 }) {
   const globeRef = useRef<GlobeMethods | null>(null);
-  const hostRef = useRef<HTMLDivElement | null>(null);
-  const [size, setSize] = useState(360);
+  const [size, setSize] = useState(420);
   const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
@@ -42,13 +41,12 @@ export const GlobeBackground3D = memo(function GlobeBackground3D({
   }, []);
 
   useEffect(() => {
-    const host = hostRef.current;
-    if (!host) return;
+    const el = containerRef.current;
+    if (!el) return;
 
     const recalc = () => {
-      const w = Math.max(0, host.clientWidth - 10);
-      const h = host.clientHeight;
-      const next = Math.max(300, Math.min(640, Math.min(w, h)));
+      const w = Math.max(0, el.clientWidth - 10);
+      const next = Math.max(360, Math.min(1100, w));
       setSize(next);
     };
 
@@ -56,13 +54,13 @@ export const GlobeBackground3D = memo(function GlobeBackground3D({
 
     if (typeof ResizeObserver !== "undefined") {
       const ro = new ResizeObserver(recalc);
-      ro.observe(host);
+      ro.observe(el);
       return () => ro.disconnect();
     }
 
     window.addEventListener("resize", recalc, { passive: true });
     return () => window.removeEventListener("resize", recalc);
-  }, []);
+  }, [containerRef]);
 
   useEffect(() => {
     if (!enabled) return;
@@ -75,10 +73,10 @@ export const GlobeBackground3D = memo(function GlobeBackground3D({
       controls.enableZoom = false;
       controls.enableRotate = false;
       controls.autoRotate = true;
-      controls.autoRotateSpeed = 0.25;
+      controls.autoRotateSpeed = 0.6;
     }
 
-    globe.pointOfView({ altitude: 2.2 }, 0);
+    globe.pointOfView({ altitude: 1.85 }, 0);
   }, [enabled]);
 
   useScrollRotation(containerRef, (deg) => {
@@ -142,7 +140,7 @@ export const GlobeBackground3D = memo(function GlobeBackground3D({
   if (!enabled) return null;
 
   return (
-    <div ref={hostRef} className="globe3d-layer" aria-hidden="true">
+    <div className="globe3d-layer" aria-hidden="true">
       <Suspense fallback={<Loading />}>
         <LazyGlobe
           ref={globeRef as unknown as React.RefObject<GlobeMethods>}

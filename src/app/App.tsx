@@ -63,8 +63,8 @@ function App() {
       >
         <div className="relative z-10">
           <Header />
+          <GlobeBackground3D containerRef={mainRef} />
           <main>
-            <GlobeBackground3D containerRef={mainRef} />
             <Outlet />
           </main>
           <Navbar />
